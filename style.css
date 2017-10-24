@@ -1,0 +1,157 @@
+/* Globals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px Helvetica, Sans-Serif;
+    line-height: 24px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin: 0 0 16px 0;
+    text-align: justify;
+}
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+a:hover {
+    border-bottom-style: solid;
+    color: black;
+}
+
+#page-wrap {
+    width: 80%;
+    margin: 40px auto 60px; 
+}
+
+/* Header */
+.title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    margin-bottom: 16px;
+}
+
+.title > h1 { 
+    margin: 0 0 16px 0;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+#vis {
+    margin: 0 auto 0 auto;
+    width: 75%;
+}
+#vis text {
+    font-family: Impact;
+}
+
+.infos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.infos > * {
+    min-width: 50%;
+}
+.infos > *:nth-child(2n) {
+    text-align: right;
+}
+
+/* Objective */
+#objective {
+    text-align: justify;
+}
+
+#objective p {
+    font-family: Georgia, Serif;
+    font-style: italic;
+    color: #444;
+}
+
+/* Content */
+#section-list {
+    display: flex;
+    flex-flow: column;
+}
+#section-list > section {
+    display: flex;
+    flex-flow: row;
+}
+#section-list > section > p {
+    width: 220px;
+    height: 100px;
+    border-right: 1px solid #999;
+
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    padding: 10px 26px 0 0;
+}
+#section-list > section > div {
+    width: 100%;
+    padding: 10px;
+}
+section > div > h2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    width: 100%;
+}
+#exp > div > h2 {
+    margin: 0;
+}
+#exp h3 {
+    font-style: italic;
+    font-size: 16px;
+    margin: 0 0 6px 0;
+}
+#exp p > span {
+    padding-left: 2em;
+}
+#section-list > section > div > h2 > span {
+    padding: 5px;
+    font-style: italic;
+    font-family: Georgia, Serif;
+    font-size: 16px;
+    color: #444;
+    font-weight: normal;
+}
+
+/* Print and Responsive */
+@media all and (max-width: 1000px) {
+    #vis {
+        width: 100%;
+    }
+    #page-wrap {
+        margin: 0;
+        padding: 20px;
+        width:100%;
+    }
+
+    .title > h1 { 
+        font-size: 30px;
+    }
+}
+
+@media print {
+    body {
+        background: #ffffff;
+    }
+
+    #page-wrap {
+        padding: 0;
+    }
+}
