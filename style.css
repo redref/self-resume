@@ -24,6 +24,25 @@ a:hover {
     color: black;
 }
 
+/* Bandeau */
+#screen {
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#screen a {
+    font-size: 20px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 80vw;
+    padding-left: 20px;
+}
+
+
+/* Wrap */
 #page-wrap {
     width: 80vw;
     margin: 40px auto 60px; 
@@ -137,7 +156,7 @@ section > div > h2 {
     #page-wrap {
         margin: 0;
         padding: 20px;
-        width: 100vw;
+        width: 100%;
     }
 
     .title > h1 { 
@@ -166,9 +185,27 @@ section > div > h2 {
     }
 }
 
+@media screen {
+    #pdf {
+        display: none;
+    }
+
+    #screen {
+        display: block;
+    }
+}
+
 @media print {
     body {
         background: #ffffff;
+    }
+
+    #screen {
+        display: none;
+    }
+
+    #pdf {
+        display: block;
     }
 
     #vis {
