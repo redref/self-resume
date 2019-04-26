@@ -29,7 +29,8 @@ a:hover {
     height: 50px;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 #screen a {
@@ -37,8 +38,7 @@ a:hover {
     display: block;
     height: 50px;
     line-height: 50px;
-    width: 80vw;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 
@@ -191,7 +191,7 @@ section > div > h2 {
     }
 
     #screen {
-        display: block;
+        display: flex;
     }
 }
 
