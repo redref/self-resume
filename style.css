@@ -6,7 +6,7 @@
 }
 
 body {
-    font: 16px Georgia, Serif;
+    font: 20px Georgia, Serif;
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -34,7 +34,7 @@ a:hover {
     align-items: center;
 }
 #screen a {
-    font-size: 20px;
+    font-size: 22px;
     display: block;
     height: 50px;
     line-height: 50px;
@@ -104,15 +104,24 @@ a:hover {
     flex-flow: row;
 }
 #section-list > section > p {
-    width: 220px;
+    width: 250px;
     height: 100px;
     border-right: 1px solid #999;
 
     font-style: italic;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     text-align: right;
     padding: 10px 26px 0 0;
+}
+.skilllist > p {
+    margin: 0px 0 5px 0;
+}
+.skilllist > div {
+    margin: 0px 0 5px 0;
+}
+.skilllist > div > span {
+    padding-right: 15px;
 }
 #section-list > section > div {
     width: 100%;
@@ -124,7 +133,7 @@ section > div > h2 {
     justify-content: space-between;
     align-items: center;
 
-    font-size: 20px;
+    font-size: 28px;
     margin: 0 0 6px 0;
     width: 100%;
 }

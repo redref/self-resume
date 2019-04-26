@@ -10,7 +10,6 @@
 
     <title>CV: Anthony BESCOND</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 
@@ -41,7 +40,7 @@
                 <g>
                     <!-- Main -->
                     <text transform="translate(20,100)rotate(-20)" style="font-size: 45px; fill: rgb(57, 59, 121);">DevOps</text>
-                    <text transform="translate(130,120)rotate(-20)" style="font-size: 45px; fill: rgb(107, 110, 207);">Data</text>
+                    <text transform="translate(110,130)rotate(-20)" style="font-size: 45px; fill: rgb(107, 110, 207);">BigData</text>
                     <text transform="translate(310,120)rotate(-20)" style="font-size: 45px; fill: rgb(99, 121, 57);">Kubernetes</text>
 
                     <!-- Secondaires -->
@@ -67,24 +66,61 @@
         <div id="section-list">
             <section>
                 <p>Compétences</p>
-                <div>
-                    <p>
-                        <strong>Gestion de configuration:</strong> Puppet, CI/CD<br />
-                        <strong>Supervision:</strong> OpenTSDB, Graphite, ELK, Nagios<br />
-                        <strong>Développement:</strong> services systèmes, micro-services, APIs<br />
-                        <strong>Langages:</strong> Python, Shell, Javascript, ...<br />
-                        <br />
-                        <strong>BigData:</strong> Hadoop, Elasticsearch, Cassandra, ...<br />
-                        <strong>HPC:</strong> Slurm, Infiniband, Paraview<br />
-                        <strong>Stockage:</strong> Ceph, MooseFS, NFS<br />
-                        <br />
-                        <strong>Architecture technique:</strong> découpage des problèmes, choix du matériel, intégration fonctionnelle<br />
-                        <strong>Anglais:</strong> Courant et technique<br />
-                    </p>
+                <div class="skilllist">
+                    <p><strong>Infrastructure / Déploiement</strong></p>
+                    <div>
+                        <span>Terraform</span>
+                        <span>GCP/GKE</span>
+                        <span>Kubernetes</span>
+                        <span>Jenkins</span>
+                        <span>Artifactory</span>
+                        <span>Gilab</span>
+                        <span>Puppet</span>
+                        <span>Gitlab</span>
+                    </div>
+                    <p><strong>Supervision</strong></p>
+                    <div>
+                        <span>Prometheus</span>
+                        <span>Jaeger</span>
+                        <span>OpenTSDB</span>
+                        <span>Nagios</span>
+                        <span>Kibana</span>
+                        <span>Fluentd</span>
+                    </div>
+                    <p><strong>Développement / Frameworks</strong></p>
+                    <div>
+                        <span>Kubernetes operator-sdk</span>
+                        <span>Django</span>
+                        <span>DRF</span>
+                        <span>App Engine</span>
+                    </div>
+                    <p><strong>Langages</strong></p>
+                    <div>
+                        <span>Go</span>
+                        <span>Python</span>
+                        <span>Shell</span>
+                    </div>
+                    <p><strong>Base de données et stockage</strong></p>
+                    <div>
+                        <span>Elasticsearch</span>
+                        <span>Hadoop</span>
+                        <span>Kafka</span>
+                        <span>Cassandra</span>
+                        <span>PostgresSQL</span>
+                        <span>MariaDB</span>
+                        <span>Ceph</span>
+                        <span>MooseFS</span>
+                    </div>
+                    <p><strong>HPC</strong></p>
+                    <div>
+                        <span>Slurm</span>
+                        <span>Infiniband RDMA</span>
+                        <span>CUDA</span>
+                    </div>
                 </div>
             </section>
             <section>
-                <p>Formations</p>
+                <p>Formation initiale</p>
                 <div>
                     <h2>Licence professionnelle "Administration et Sécurité des Réseaux"<span>2008</span></h2>
                     <h2>DUT "Réseaux et Télécommunications"<span>2007</span></h2>
@@ -93,7 +129,20 @@
             <section id="exp">
                 <p>Expériences professionnelles</p>
                 <div>
-                    <h2>Ingénieur Système HPC/BigData<span>depuis 2014</span></h2>
+                    <h2>"System Reliability Engineer"<span>depuis 2018</span></h2>
+                    <h3>Blablacar (Paris)</h3>
+                    <p>
+                        <strong>Technologies:</strong> Kubernetes, Docker, Rkt, Go, Prometheus, Nginx, BGP, Istio<br />
+                    </p>
+                    <p>
+                        Responsable au sein d'une équipe de 3 de la conception, la pertinence et la disponibilité des clusters de données: MariaDB, Hadoop, Vertica, Cassandra, Redis ... et des outils de manipulation des flux: Kafka, Kafka Connect, Airflow.<br />
+                        Participation au sein d'une équipe plus large à la conception, l'intégration de l'infrastructure, des solutions de déploiment ou spécifiques au besoin.<br />
+                        Projets:<br />
+                        &nbsp;- Optimisation du système de cache d'API (multi-couches) basé sur Nginx<br />
+                        &nbsp;- Migration des bases de données dans GKE: conteneurs, définitions des "pods", ...<br />
+                        &nbsp;- Rationalisation de la gestion des logs<br />
+                    </p>
+                    <h2>Ingénieur Système HPC/BigData<span>2014 à 2018</span></h2>
                     <h3>Ministère des armées (Paris)</h3>
                     <p>
                         <strong>Technologies:</strong> Puppet, Linux, Python, Django, DRF, Ceph, Infiniband, GPU<br />
