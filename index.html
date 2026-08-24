@@ -1,251 +1,133 @@
-<!DOCTYPE html>
-
-<html lang="fr">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" CONTENT="SRE, HPC, BigData, Cloud, DevOps">
-
-    <title>CV: Anthony BESCOND</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resume of Anthony Bescond, Senior SRE and Kubernetes multi-cloud expert">
+    <title>Anthony Bescond | Senior SRE</title>
+    <style>
+        @font-face { font-family: "DM Serif Display"; src: url("assets/fonts/dm-serif-display-regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+        @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope-regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+        @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope-medium.ttf") format("truetype"); font-style: normal; font-weight: 500; font-display: swap; }
+        @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope-semibold.ttf") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
+        @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope-bold.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
+        @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope-extrabold.ttf") format("truetype"); font-style: normal; font-weight: 800; font-display: swap; }
+        :root { --ink: #191b28; --muted: #697084; --line: #e4e5ec; --paper: #fff; --violet: #7047eb; --violet-soft: #f0edff; --coral: #ff735c; }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; color: var(--ink); background: #ecebf4; font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.55; }
+        a { color: inherit; text-decoration-color: var(--violet); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+        .toolbar { display: flex; justify-content: flex-end; padding: .7rem max(1.25rem, calc((100% - 1180px) / 2)); background: #12131e; color: #fff; font-size: .76rem; letter-spacing: .04em; }
+        .toolbar a { text-decoration: none; opacity: .8; } .toolbar a:hover { opacity: 1; }
+        .resume { max-width: 1180px; margin: 2.5rem auto; background: var(--paper); box-shadow: 0 24px 70px rgba(32, 28, 64, .16); }
+        .hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; padding: 4.5rem 4.8rem 3.8rem; background: radial-gradient(circle at 79% 8%, rgba(255, 115, 92, .95) 0 3%, transparent 3.2%), radial-gradient(circle at 99% 93%, #9a77ff 0 15%, transparent 15.3%), radial-gradient(circle at 69% 63%, #5334bb 0 28%, transparent 28.4%), linear-gradient(120deg, #151622 0 44%, #272449 44% 61%, #7047eb 61% 100%); color: #fff; position: relative; overflow: hidden; isolation: isolate; }
+        .hero::before { content: ""; position: absolute; z-index: 0; inset: 0; opacity: .46; background-image: linear-gradient(rgba(255,255,255,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.16) 1px, transparent 1px); background-size: 31px 31px; background-position: right -5px top -5px; clip-path: polygon(47% 0, 100% 0, 100% 100%, 30% 100%); }
+        .hero::after { content: ""; position: absolute; z-index: 0; width: 178px; height: 178px; right: 4.5rem; bottom: -96px; border: 17px solid var(--coral); border-radius: 50%; box-shadow: -42px -42px 0 -31px #fff, -42px -42px 0 -15px rgba(255,255,255,.27); transform: rotate(-12deg); }
+        .hero > * { position: relative; z-index: 1; }
+        .eyebrow { margin: 0 0 .85rem; color: #bbaaff; font-size: .7rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+        h1, h2, h3, p { margin-top: 0; }
+        h1 { margin-bottom: .6rem; font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: clamp(3.1rem, 7vw, 5.7rem); font-weight: 400; line-height: .85; letter-spacing: -.065em; }
+        .hero h2 { margin: 0; color: #e6e4f3; font-size: 1.05rem; font-weight: 500; letter-spacing: .015em; }
+        .contact { align-self: center; min-width: 215px; padding: 1rem 1.1rem; border-radius: .4rem; background: rgba(20, 18, 44, .18); box-shadow: 0 14px 28px rgba(13, 10, 31, .32); backdrop-filter: blur(3px); font-size: .87rem; text-align: right; text-shadow: 0 2px 10px rgba(0, 0, 0, .55); } .contact p { margin: .28rem 0; } .contact a { color: #fff; text-decoration-color: #ffb3a6; }
+        .layout { display: grid; grid-template-columns: 305px minmax(0, 1fr); }
+        aside { padding: 3.25rem 2.2rem 3rem 3.3rem; background: #f7f6fb; border-right: 1px solid var(--line); }
+        main { padding: 3.25rem 4.8rem 4rem; }
+        .section { margin-bottom: 2.8rem; } .section:last-child { margin-bottom: 0; }
+        .section-title { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.25rem; color: var(--violet); font-size: .68rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+        .section-title::after { content: ""; height: 1px; flex: 1; background: var(--line); }
+        .profile { margin: 0; padding: 0 0 2.5rem; border-bottom: 1px solid var(--line); font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: 1.24rem; line-height: 1.5; color: #323447; }
+        .skill-group { margin-bottom: 1.5rem; } .skill-group strong { display: block; margin-bottom: .65rem; font-size: .73rem; letter-spacing: .02em; }
+        .tags { display: flex; flex-wrap: wrap; gap: .42rem; } .tag { padding: .28rem .52rem; border-radius: 2px; background: #fff; box-shadow: inset 0 0 0 1px #dddbea; color: #484b62; font-size: .71rem; }
+        .education-item { margin-bottom: 1.25rem; } .education-item strong { display: block; font-size: .78rem; line-height: 1.45; } .education-item span { display: inline-block; margin-top: .28rem; color: var(--violet); font-size: .72rem; font-weight: 700; }
+        .job { position: relative; margin: 0; padding: 0 0 2.1rem 1.8rem; border-left: 1px solid #d9d5ed; } .job::before { content: ""; position: absolute; width: .55rem; height: .55rem; left: -.31rem; top: .38rem; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 4px var(--violet-soft); } .job:last-child { padding-bottom: 0; }
+        .job-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; } .job h3 { margin-bottom: .18rem; font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: 1.38rem; font-weight: 400; line-height: 1.15; letter-spacing: -.025em; }
+        .date { flex: 0 0 auto; color: var(--coral); font-size: .72rem; font-weight: 800; letter-spacing: .06em; white-space: nowrap; } .company { margin-bottom: .65rem; color: var(--violet); font-size: .78rem; font-weight: 750; }
+        .job p { margin-bottom: .55rem; font-size: .86rem; } .tech { color: var(--muted); font-size: .75rem !important; } .tech strong { color: var(--ink); } .interests { color: #4c4e60; font-size: .82rem; }
+        @media (max-width: 760px) {
+            .toolbar { padding-inline: 1rem; }
+            .resume { margin: 0; box-shadow: none; }
+            .hero { grid-template-columns: 1fr; padding: 3rem 1.5rem 2.4rem; }
+            .hero::before { clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%); }
+            .hero::after { right: 1.2rem; width: 110px; height: 110px; border-width: 12px; box-shadow: -28px -28px 0 -21px #fff, -28px -28px 0 -10px rgba(255,255,255,.27); }
+            .contact { text-align: left; }
+            .layout { display: block; }
+            aside, main { padding: 2.3rem 1.5rem; }
+            aside { border-right: 0; border-bottom: 1px solid var(--line); }
+            .job-head { display: block; }
+            .date { display: block; margin-top: .2rem; }
+        }
+        @media print {
+            body { background: #fff; }
+            .toolbar { display: none; }
+            .resume { margin: 0; box-shadow: none; }
+            .hero { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .job { break-inside: avoid; }
+            a { text-decoration: none; }
+        }
+    </style>
 </head>
-
 <body>
-    <div id="screen">
-        <a href="CV_Anthony_BESCOND.pdf">Télécharger la version PDF.</a>
-        <a href="en.html">English version.</a>
-    </div>
+    <nav class="toolbar" aria-label="Resume links">
+        <a href="Resume_Anthony_BESCOND.pdf">Download PDF</a>
+    </nav>
 
-    <div id="page-wrap">
-
-        <header>
-            <div class="title">
-                <h1>Anthony BESCOND</h1>
-                <h2>Senior SRE| Kubernetes & Multi-Cloud Expert</h2>
+    <article class="resume">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">Infrastructure · Reliability · Scale</p>
+                <h1>Anthony<br>BESCOND</h1>
+                <h2>Senior SRE | Kubernetes &amp; Multi-Cloud Expert</h2>
             </div>
-
-            <p class="infos">
-                <span>Mobile: <span class="tel">+33 (0)6 87 79 01 99</span><br /></span>
-                <span>39 ans</span>
-                <span>E-mail: anthony(at)bescond09.fr</span>
-                <span id="pdf">CV: https://redref.github.io/self-resume/</span>
-            </p>
+            <div class="contact">
+                <p>France · Open to international work</p>
+                <p>+33 (0)6 87 79 01 99</p>
+                <p>anthony(at)bescond09.fr</p>
+                <p><a href="https://github.com/redref?tab=repositories">github.com/redref</a></p>
+            </div>
         </header>
 
-        <div id="vis">
-            <svg width="100%" viewBox="0 0 500 140">
-                <g>
-                    <!-- Main -->
-                    <text transform="translate(20,100)rotate(-20)" style="font-size: 45px; fill: rgb(57, 59, 121);">DevOps</text>
-                    <text transform="translate(110,130)rotate(-20)" style="font-size: 45px; fill: rgb(107, 110, 207);">HPC</text>
-                    <text transform="translate(310,120)rotate(-20)" style="font-size: 45px; fill: rgb(99, 121, 57);">Kubernetes</text>
+        <div class="layout">
+            <aside>
+                <section class="section">
+                    <h2 class="section-title">Core expertise</h2>
+                    <div class="skill-group"><strong>Infrastructure / Deploy</strong><div class="tags"><span class="tag">Terraform</span><span class="tag">AWS</span><span class="tag">GCP / GKE</span><span class="tag">Kubernetes</span><span class="tag">K3S</span><span class="tag">Helm</span><span class="tag">FluxCD</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span><span class="tag">Ansible</span></div></div>
+                    <div class="skill-group"><strong>Observability</strong><div class="tags"><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Loki</span><span class="tag">Tempo</span><span class="tag">ELK</span><span class="tag">Fluentd</span></div></div>
+                    <div class="skill-group"><strong>Development</strong><div class="tags"><span class="tag">Go</span><span class="tag">Python</span><span class="tag">Shell</span><span class="tag">Django</span><span class="tag">Kubernetes operators</span></div></div>
+                    <div class="skill-group"><strong>Data / HPC</strong><div class="tags"><span class="tag">Kafka</span><span class="tag">Cassandra</span><span class="tag">MariaDB</span><span class="tag">MongoDB</span><span class="tag">Ceph</span><span class="tag">Slurm</span><span class="tag">CUDA</span><span class="tag">InfiniBand RDMA</span></div></div>
+                </section>
 
-                    <!-- Secondaires -->
-                    <text transform="translate(260,60)rotate(-20)" style="font-size: 30px; fill: rgb(181, 180, 107);">Kafka</text>
-                    <text transform="translate(380,50)rotate(-20)" style="font-size: 30px; fill: rgb(107, 110, 207);">Docker</text>
-                    <text transform="translate(20,130)rotate(-20)" style="font-size: 30px; fill: rgb(160, 110, 207);">K3S</text>
-                    <text transform="translate(180,50)rotate(-20)" style="font-size: 30px; fill: rgb(160, 110, 207);">Grafana</text>
-                    <text transform="translate(15,50)rotate(-20)" style="font-size: 30px; fill: rgb(156, 158, 222);">Crypto</text>
-                    <text transform="translate(230,100)rotate(-20)" style="font-size: 30px; fill: rgb(140, 162, 82);">Prometheus</text>
-                    <text transform="translate(410,130)rotate(-20)" style="font-size: 30px; fill: rgb(181, 180, 150);">DBs</text>
-                </g>
-            </svg>
+                <section class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item"><strong>Professional degree in Network Administration and Security</strong><span>2008</span></div>
+                    <div class="education-item"><strong>Technology degree in Networks and Telecommunications</strong><span>2007</span></div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Interests</h2>
+                    <p class="interests">Trail running<br>Home automation<br>Home improvement</p>
+                </section>
+            </aside>
+
+            <main>
+                <section class="section">
+                    <h2 class="section-title">Profile</h2>
+                    <p class="profile">Senior infrastructure and reliability engineer with 15+ years of experience across SRE, cloud, DevOps, HPC and Big Data. I design pragmatic platforms that balance performance, security, scalability and cost, from bare-metal clusters to multi-cloud Kubernetes environments.</p>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="job"><div class="job-head"><h3>Senior Blockchain SRE</h3><span class="date">2022 - 2025</span></div><div class="company">Kiln · kiln.fi</div><p class="tech"><strong>Stack:</strong> AWS, Kubernetes, bare metal, Helm, FluxCD, Tempo, staking</p><p>Scaled and specialized infrastructure during rapid growth in clients, teams and protocol diversity. Architected AWS and bare-metal infrastructure for 300 to 500 nodes, integrated and supported validators across 30+ blockchain protocols, and automated validation performance improvements.</p></div>
+                    <div class="job"><div class="job-head"><h3>DevOps Engineer</h3><span class="date">2020 - 2021</span></div><div class="company">Altair Engineering</div><p class="tech"><strong>Stack:</strong> Kubernetes, Docker, MongoDB, Python, Grafana, K3S, GitLab CI</p><p>Owned infrastructure and release processes for a multi-cloud HPC resource deployment platform. Managed test configurations across seven clouds, delivered highly available Kubernetes and on-premise K3S deployments, and built integrations for monitoring and tracing. Refactored <a href="https://github.com/altairengineering/pkr/">pkr</a> and migrated Jenkins tests to GitLab CI.</p></div>
+                    <div class="job"><div class="job-head"><h3>System Reliability Engineer</h3><span class="date">2018 - 2019</span></div><div class="company">BlaBlaCar · Paris</div><p class="tech"><strong>Stack:</strong> Kubernetes, Docker, Go, Prometheus, Nginx, BGP, Istio, Kafka</p><p>Designed and operated data clusters including MariaDB, Hadoop, Vertica, Cassandra and Redis, as well as Kafka, Kafka Connect and Airflow data tooling. Reworked the multi-layer Nginx API cache to maintain a 99%+ hit rate, migrated databases to GKE and redesigned the logging stack.</p></div>
+                    <div class="job"><div class="job-head"><h3>HPC / Big Data Systems Engineer</h3><span class="date">2014 - 2018</span></div><div class="company">French Ministry of Defence · Paris</div><p class="tech"><strong>Stack:</strong> Puppet, Linux, Python, Django, Ceph, InfiniBand, GPU</p><p>Selected, deployed and maintained bare-metal clusters. Integrated and optimized HPC and Big Data platforms, developed Python daemons, APIs and web services, and analyzed customer applications to improve workload performance.</p></div>
+                    <div class="job"><div class="job-head"><h3>Systems Engineer, E-commerce</h3><span class="date">2013 - 2014</span></div><div class="company">Galeries Lafayette · Paris</div><p class="tech"><strong>Stack:</strong> Apache, Varnish, Tomcat, Oracle, Hybris, Graphite</p><p>Maintained the three-tier web platform and product publishing workflows. Designed delivery architecture with test platforms and automatic builds, and integrated metrology tools for capacity planning and marketing analysis.</p></div>
+                    <div class="job"><div class="job-head"><h3>HPC Systems Engineer</h3><span class="date">2013</span></div><div class="company">OVH GS - Oxalya · Paris</div><p class="tech"><strong>Stack:</strong> Linux, Slurm, Lustre, InfiniBand, Nvidia GPU</p><p>Deployed dedicated HPC clusters at customer sites, integrated a shared compute-on-demand service, and compiled, optimized and benchmarked scientific workloads.</p></div>
+                    <div class="job"><div class="job-head"><h3>Production Engineer</h3><span class="date">2010 - 2012</span></div><div class="company">DCNS · Cherbourg</div><p class="tech"><strong>Stack:</strong> Linux, Oracle, JBoss, Apache, Tomcat, Java, Centreon, Control-M</p><p>Installed and maintained internal services and daily data processes. Developed a framework for traceable and secure deliveries across many instances.</p></div>
+                    <div class="job"><div class="job-head"><h3>Intelligent Network Systems Technician</h3><span class="date">2008 - 2010</span></div><div class="company">Alcatel-Lucent</div><p class="tech"><strong>Assignments:</strong> Bell M (Canada), OTE (Greece), Orange (Dominican Republic)</p><p>Independently delivered Intelligent Network application clusters at customer sites, covering hardware installation, storage and system configuration, service deployment and testing.</p></div>
+                    <div class="job"><div class="job-head"><h3>Network Administrator / PHP Developer</h3><span class="date">2007 - 2008</span></div><div class="company">MMF Services · Solstys</div><p>Configured network infrastructure and web services, then integrated the WebDAV protocol into a CMS product using PHP.</p></div>
+                </section>
+            </main>
         </div>
-
-        <div id="objective">
-            <p>
-                Avec plus de 15 ans d'expérience en ingéniérie système, durant lesquelles "infra-as-code", "cloud", "devops" (et récemment "IA") sont devenus des outils de travail, je suis aujourd'hui à même d'appréhender un vaste panel de problèmatiques de production et de trouver les solutions d'architecture au plus proche du besoin permettant de maitriser la performance, la sécurité, la scalabilité et les coûts.<br>
-                <br>
-                Je souhaite, dorénavant, participer à un projet pérenne pour y apporter mes compétences et pouvoir fructifier avec celui-ci.
-            </p>
-        </div>
-
-        <div id="section-list">
-            <section>
-                <p>Compétences</p>
-                <div class="skilllist">
-                    <p><strong>Infrastructure / Déploiement</strong></p>
-                    <div>
-                        <span>Terraform</span>
-                        <span>GCP/GKE</span>
-                        <span>Kubernetes (K3S/AKS/GKE/EKS)</span>
-                        <span>Jenkins</span>
-                        <span>Puppet/Ansible/Saltstack</span>
-                        <span>Gitlab/Jenkins</span>
-                    </div>
-                    <p><strong>Supervision</strong></p>
-                    <div>
-                        <span>Fluentd</span>
-                        <span>Prometheus</span>
-                        <span>Grafana loki/tempo</span>
-                        <span>OpenTSDB</span>
-                        <span>ELK stack</span>
-                    </div>
-                    <p><strong>Développement / Frameworks</strong></p>
-                    <div>
-                        <span>Kubernetes operators</span>
-                        <span>Django</span>
-                        <span>App Engine</span>
-                    </div>
-                    <p><strong>Langages</strong></p>
-                    <div>
-                        <span>Go</span>
-                        <span>Python</span>
-                        <span>Shell</span>
-                    </div>
-                    <p><strong>Base de données et stockage</strong></p>
-                    <div>
-                        <span>Mongo</span>
-                        <span>Elasticsearch</span>
-                        <span>Hadoop</span>
-                        <span>Kafka</span>
-                        <span>Cassandra</span>
-                        <span>PostgresSQL</span>
-                        <span>MariaDB</span>
-                        <span>Ceph</span>
-                        <span>MooseFS</span>
-                    </div>
-                    <p><strong>HPC</strong></p>
-                    <div>
-                        <span>Slurm</span>
-                        <span>Infiniband RDMA</span>
-                        <span>CUDA</span>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <p>Formation initiale</p>
-                <div>
-                    <h2>Licence professionnelle "Administration et Sécurité des Réseaux"<span>2008</span></h2>
-                    <h2>DUT "Réseaux et Télécommunications"<span>2007</span></h2>
-                </div>
-            </section>
-            <section id="exp">
-                <p>Expériences professionnelles</p>
-                <div>
-                    <h2>Senior "blockchain" SRE<span>2022 à 2025</span></h2>
-                    <h3>Kiln (kiln.fi)</h3>
-                    <p>
-                        <strong>Technologies:</strong> Staking, Crypto, AWS, Kubernetes, Baremetal, Helm, FluxCD, Tempo<br />
-                    </p>
-                    <p>
-                        Accompagnement et spécialisation de l'infrastructure dans un cadre de forte croissance de la demande, de l'équipe ainsi que la diversité des besoins.
-                        Intégration logiciels et collaboration avec les développeurs des projets de différentes chaînes: Ethereum, TON, Solana, Polkadot, ...<br />
-                        Projets:<br />
-                        &nbsp;- Architecture et déploiement infrastructure AWS + Baremetal (300 à 500 noeuds)<br />
-                        &nbsp;- Intégration et maintien de validateurs "blockchain" pour le staking crypto (~30 protocoles)<br />
-                        &nbsp;- Optimisation et automatisation des performances de validation<br />
-                    </p>
-                    <h2>DevOps<span>2020 à 2021</span></h2>
-                    <h3>Altair Engineering</h3>
-                    <p>
-                        <strong>Technologies:</strong> Kubernetes, Docker, Mongo, Python, Grafana Stack, K3S, Gitlab<br />
-                    </p>
-                    <p>
-                        Responsable de l'infrastructure et de la release pour un logiciel micro-service de déploiement multi-cloud de ressources HPC (pour les usages de débordement ou plate-forme propre).
-                        Gestion des configurations de tests sur les cloud supportés, déploiement des différentes plate-formes en propre et support client.<br />
-                        Développement et déploiement des intégrations avec les outils externes à des fins de supervision, trace ou interface.<br />
-                        Projets:<br />
-                        &nbsp;- Passage en haute-disponibilité des différents composant au sein des clusters kubernetes<br />
-                        &nbsp;- Déploiement haute-disponibilité onpremise avec K3S<br />
-                        &nbsp;- Refactoring de l'outil de gestion commune compose/kubernetes (<a href="https://github.com/altairengineering/pkr/">github.com/altairengineering/pkr</a>)<br />
-                        &nbsp;- Migration des tests de Jenkins vers GitlabCI<br />
-                        &nbsp;- Supervision et traces notamment avec les outils Grafana (Loki/Tempo)<br />
-                    </p>
-                    <h2>"System Reliability Engineer"<span>2018 à 2019</span></h2>
-                    <h3>Blablacar (Paris)</h3>
-                    <p>
-                        <strong>Technologies:</strong> Kubernetes, Docker, Rkt, Go, Prometheus, Nginx, BGP, Istio<br />
-                    </p>
-                    <p>
-                        Au sein d'une équipe de 3 chargée de la conception, la fiabilité et la disponibilité des clusters de données: MariaDB, Hadoop, Vertica, Cassandra, Redis ... et des outils de manipulation des flux: Kafka, Kafka Connect, Airflow.<br />
-                        Participation au sein d'une équipe plus large à la conception, l'intégration de l'infrastructure, des solutions de déploiement ou spécifiques au besoin.<br />
-                        Projets:<br />
-                        &nbsp;- Optimisation du système de cache d'API (multi-couches) basé sur Nginx afin de maintenir un taux > 99%<br />
-                        &nbsp;- Migration des bases de données dans GKE: conteneurs, définitions des "pods", ...<br />
-                        &nbsp;- Rationalisation de la gestion des logs<br />
-                    </p>
-                    <h2>Ingénieur Système HPC/BigData<span>2014 à 2018</span></h2>
-                    <h3>Ministère des armées (Paris)</h3>
-                    <p>
-                        <strong>Technologies:</strong> Puppet, Linux, Python, Django, DRF, Ceph, Infiniband, GPU<br />
-                    </p>
-                    <p>
-                        Choix de l'architecture matérielle, acquisition, installation, mise à jour et maintenance de clusters.<br />
-                        Intégration des applicatifs d'ordonnancement, d'indexation ou de stockage des données.<br />
-                        Architecture et développement de nombreux outils, notamment sous forme de micro-services et d'APIs, pour l'articulation des procédés de traitement ou de gestion.<br />
-                        Analyse et conseils aux développeurs pour l'optimisation des performances applicatives.<br />
-                    </p>
-                    <h2>Ingénieur Système Web/E-commerce<span>2013 à 2014</span></h2>
-                    <h3>Galeries Lafayette (Paris)</h3>
-                    <p>
-                        <strong>Technologies:</strong> Apache, Varnish, Tomcat, Oracle, Hybris, Graphite<br />
-                    </p>
-                    <p>
-                        Maintenance et évolutions de la plate-forme web (3 tiers) et des procédés permettant la mise en ligne, l'enrichissement et l'indexation des produits.<br /> 
-                        Adaptation des moyens techniques pour la période des soldes.<br />
-                        Mise en place d'outils de collecte des métriques et métadonnées pour l'analyse du traffic et le ciblage.<br />
-                    </p>
-                    <h2>Ingénieur Système HPC<span>2013</span></h2>
-                    <h3>OVH GS - Oxalya (Paris)</h3>
-                    <p>
-                        <strong>Technologies:</strong> Linux, Slurm, Lustre, Infiniband, GPU Nvidia<br />
-                    </p>
-                    <p>
-                        Déploiement de clusters de calcul dédiés et intégration d'un service mutualisé de calcul à la demande.<br />
-                        Compilation, optimisations et benchmarks des codes de calcul.<br />
-                    </p>
-                    <h2>Ingénieur de production<span>2010 à 2012</span></h2>
-                    <h3>DCNS (Cherbourg)</h3>
-                    <p>
-                        <strong>Technologies:</strong> Linux, Oracle, JBOSS, Apache, Tomcat, Java, Centreon, Control-M<br />
-                    </p>
-                    <p>
-                        Installation et MCO des services internes et des traitements journaliers utilisés pour la conception et le suivi de la construction des navires.<br />
-                        Développement d'un framework pour les livraisons et mises à jour permettant le déploiement tracé et sécurisé sur de nombreuses instances.
-                    </p>
-                    <h2>Technicien Système "Intelligent Network"<span>2008 à 2010</span></h2>
-                    <h3>Alcatel-Lucent</h3>
-                    <p>
-                        <strong>Missions:</strong> Bell M (Canada), OTE (Grèce), Orange (R.Dominicaine).<br />
-                        <strong>Technologies:</strong> Solaris, Oracle, Switching<br />
-                    </p>
-                    <p>
-                        Responsable en autonomie de l'installation du cluster IN chez l'opérateur téléphonique "client" à travers :<br >
-                        <span>l'installation physique des racks et machines,</span><br />
-                        <span>la configuration des appliances de stockage,</span><br />
-                        <span>la configuration des systèmes,</span><br />
-                        <span>l'installation, la configuration et les tests des services Alcatel-Lucent.</span><br />
-                    </p>
-                    <h2>Technicien Réseaux (stage)<span>2008</span></h2>
-                    <h3>MMF Services (Quéven)</h3>
-                    <p>
-                        Renouvellement des équipements : routeurs, firewalls, et de l'infrastructure réseau : zones, flux.<br />
-                        Intégration de services Web de délestage.<br />
-                    </p>
-                    <h2>Développeur PHP (stage)<span>2007</span></h2>
-                    <h3>Solstys (Lannion)</h3>
-                    <p>Intégration en PHP du protocole WebDAV.</p>
-                </div>
-            </section>
-            <section>
-                <p>Loisirs</p>
-                <div>
-                    <p>
-                        Course à pied (trail)<br />
-                        Développement et nouvelles technologies (domotique, intelligence artificielle, ...)<br />
-                        Bricolage<br />
-                    </p>
-                </div>
-            </section>
-        </div>
-
-    </div>
-
+    </article>
 </body>
-
 </html>
