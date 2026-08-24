@@ -39,7 +39,7 @@
         .section-title::after { content: ""; height: 1px; flex: 1; background: var(--line); }
         .profile { margin: 0; padding: 0 0 2.5rem; border-bottom: 1px solid var(--line); font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.18rem; line-height: 1.55; color: #323447; }
         .skill-group { margin-bottom: 1.5rem; } .skill-group strong { display: block; margin-bottom: .65rem; font-size: .73rem; letter-spacing: .02em; }
-        .tags { display: flex; flex-wrap: wrap; gap: .42rem; } .tag { padding: .28rem .52rem; border-radius: 2px; background: #fff; box-shadow: inset 0 0 0 1px #dddbea; color: #484b62; font-size: .71rem; }
+        .tags { color: #484b62; font-size: .75rem; line-height: 1.8; } .tag { display: inline; } .tag + .tag::before { content: " · "; color: var(--violet); }
         .education-item { margin-bottom: 1.25rem; } .education-item strong { display: block; font-size: .78rem; line-height: 1.45; } .education-item span { display: inline-block; margin-top: .28rem; color: var(--violet); font-size: .72rem; font-weight: 700; }
         .job { position: relative; margin: 0; padding: 0 0 2.1rem 1.8rem; border-left: 1px solid #d9d5ed; } .job::before { content: ""; position: absolute; width: .55rem; height: .55rem; left: -.31rem; top: .38rem; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 4px var(--violet-soft); } .job:last-child { padding-bottom: 0; }
         .job-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; } .job h3 { margin-bottom: .18rem; font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.3rem; font-weight: 500; line-height: 1.15; letter-spacing: -.04em; }
@@ -91,7 +91,7 @@
         <div class="layout">
             <aside>
                 <section class="section">
-                    <h2 class="section-title">Core expertise</h2>
+                    <h2 class="section-title">Technical Skills</h2>
                     <div class="skill-group"><strong>Infrastructure / Deploy</strong><div class="tags"><span class="tag">Terraform</span><span class="tag">AWS</span><span class="tag">GCP / GKE</span><span class="tag">Kubernetes</span><span class="tag">K3S</span><span class="tag">Helm</span><span class="tag">FluxCD</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span><span class="tag">Ansible</span></div></div>
                     <div class="skill-group"><strong>Observability</strong><div class="tags"><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Loki</span><span class="tag">Tempo</span><span class="tag">ELK</span><span class="tag">Fluentd</span></div></div>
                     <div class="skill-group"><strong>Development</strong><div class="tags"><span class="tag">Go</span><span class="tag">Python</span><span class="tag">Shell</span><span class="tag">Django</span><span class="tag">Kubernetes operators</span></div></div>
@@ -105,19 +105,19 @@
                 </section>
 
                 <section class="section">
-                    <h2 class="section-title">Interests</h2>
+                    <h2 class="section-title">Additional Interests</h2>
                     <p class="interests">Trail running<br>Home automation<br>Home improvement</p>
                 </section>
             </aside>
 
             <main>
                 <section class="section">
-                    <h2 class="section-title">Profile</h2>
+                    <h2 class="section-title">Professional Summary</h2>
                     <p class="profile">Senior infrastructure and reliability engineer with 15+ years of experience across SRE, cloud, DevOps, HPC and Big Data. I design pragmatic platforms that balance performance, security, scalability and cost, from bare-metal clusters to multi-cloud Kubernetes environments.</p>
                 </section>
 
                 <section class="section">
-                    <h2 class="section-title">Experience</h2>
+                    <h2 class="section-title">Professional Experience</h2>
                     <div class="job"><div class="job-head"><h3>Senior Blockchain SRE</h3><span class="date">2022 - 2025</span></div><div class="company">Kiln · kiln.fi</div><p class="tech"><strong>Stack:</strong> AWS, Kubernetes, bare metal, Helm, FluxCD, Tempo, staking</p><p>Scaled and specialized infrastructure during rapid growth in clients, teams and protocol diversity. Architected AWS and bare-metal infrastructure for 300 to 500 nodes, integrated and supported validators across 30+ blockchain protocols, and automated validation performance improvements.</p></div>
                     <div class="job"><div class="job-head"><h3>DevOps Engineer</h3><span class="date">2020 - 2021</span></div><div class="company">Altair Engineering</div><p class="tech"><strong>Stack:</strong> Kubernetes, Docker, MongoDB, Python, Grafana, K3S, GitLab CI</p><p>Owned infrastructure and release processes for a multi-cloud HPC resource deployment platform. Managed test configurations across seven clouds, delivered highly available Kubernetes and on-premise K3S deployments, and built integrations for monitoring and tracing. Refactored <a href="https://github.com/altairengineering/pkr/">pkr</a> and migrated Jenkins tests to GitLab CI.</p></div>
                     <div class="job"><div class="job-head"><h3>System Reliability Engineer</h3><span class="date">2018 - 2019</span></div><div class="company">BlaBlaCar · Paris</div><p class="tech"><strong>Stack:</strong> Kubernetes, Docker, Go, Prometheus, Nginx, BGP, Istio, Kafka</p><p>Designed and operated data clusters including MariaDB, Hadoop, Vertica, Cassandra and Redis, as well as Kafka, Kafka Connect and Airflow data tooling. Reworked the multi-layer Nginx API cache to maintain a 99%+ hit rate, migrated databases to GKE and redesigned the logging stack.</p></div>
