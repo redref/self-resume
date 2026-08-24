@@ -32,14 +32,14 @@
         .hero h2 { margin: 0; color: #e6e4f3; font-size: 1.05rem; font-weight: 500; letter-spacing: .015em; }
         .contact { align-self: center; min-width: 215px; padding: 1rem 1.1rem; border-radius: .4rem; background: rgba(20, 18, 44, .18); box-shadow: 0 14px 28px rgba(13, 10, 31, .32); backdrop-filter: blur(3px); font-size: .87rem; text-align: right; text-shadow: 0 2px 10px rgba(0, 0, 0, .55); } .contact p { margin: .28rem 0; } .contact a { color: #fff; text-decoration-color: #ffb3a6; }
         .layout { display: grid; grid-template-columns: 305px minmax(0, 1fr); }
-        aside { padding: 3.25rem 2.2rem 3rem 3.3rem; background: #f7f6fb; border-right: 1px solid var(--line); }
-        main { padding: 3.25rem 4.8rem 4rem; }
-        .section { margin-bottom: 2.8rem; } .section:last-child { margin-bottom: 0; }
-        .section-title { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.25rem; color: var(--violet); font-size: .68rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+        aside { padding: 2.25rem 1.2rem 3rem 2.3rem; background: #f7f6fb; border-right: 1px solid var(--line); }
+        main { padding: 2.25rem 3.8rem 3rem; }
+        .section { margin-bottom: 0.8rem; } .section:last-child { margin-bottom: 0; }
+        .section-title { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.25rem; color: var(--violet); font-size: .80rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
         .section-title::after { content: ""; height: 1px; flex: 1; background: var(--line); }
-        .profile { margin: 0; padding: 0 0 2.5rem; border-bottom: 1px solid var(--line); font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.18rem; line-height: 1.55; color: #323447; }
-        .skill-group { margin-bottom: 1.5rem; } .skill-group strong { display: block; margin-bottom: .65rem; font-size: .73rem; letter-spacing: .02em; }
-        .tags { color: #484b62; font-size: .75rem; line-height: 1.8; } .tag { display: inline; } .tag + .tag::before { content: " · "; color: var(--violet); }
+        .profile { margin: 0; padding: 0 0 2.5rem; border-bottom: 1px solid var(--line); font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.12rem; line-height: 1.55; color: #323447; text-align: justify; text-align-last: left; hyphens: auto; }
+        .skill-group { margin-bottom: 1.5rem; text-align: left; } .skill-group strong { display: block; margin-bottom: .42rem; color: var(--ink); font-size: .73rem; letter-spacing: .02em; }
+        .tags { color: #484b62; font-size: .75rem; line-height: 1.8; text-align: left; } .tag { display: inline; } .tag + .tag::before { content: " · "; color: var(--violet); }
         .education-item { margin-bottom: 1.25rem; } .education-item strong { display: block; font-size: .78rem; line-height: 1.45; } .education-item span { display: inline-block; margin-top: .28rem; color: var(--violet); font-size: .72rem; font-weight: 700; }
         .job { position: relative; margin: 0; padding: 0 0 2.1rem 1.8rem; border-left: 1px solid #d9d5ed; } .job::before { content: ""; position: absolute; width: .55rem; height: .55rem; left: -.31rem; top: .38rem; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 4px var(--violet-soft); } .job:last-child { padding-bottom: 0; }
         .job-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; } .job h3 { margin-bottom: .18rem; font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.3rem; font-weight: 500; line-height: 1.15; letter-spacing: -.04em; }
@@ -76,12 +76,12 @@
     <article class="resume">
         <header class="hero">
             <div>
-                <p class="eyebrow">Infrastructure · Reliability · Scale</p>
+                <p class="eyebrow">Devops · Observability · Reliability · Scale</p>
                 <h1>Anthony<br>BESCOND</h1>
-                <h2>Senior SRE | Kubernetes &amp; Multi-Cloud Expert</h2>
+                <h2>Senior Devops Engineer | CI/CD | Kubernetes &amp; Multi-Cloud</h2>
             </div>
             <div class="contact">
-                <p>France · Open to international work</p>
+                <p>France (Remote) · Open to international work</p>
                 <p>+33 (0)6 87 79 01 99</p>
                 <p>anthony(at)bescond09.fr</p>
                 <p><a href="https://github.com/redref?tab=repositories">github.com/redref</a></p>
@@ -92,10 +92,13 @@
             <aside>
                 <section class="section">
                     <h2 class="section-title">Technical Skills</h2>
-                    <div class="skill-group"><strong>Infrastructure / Deploy</strong><div class="tags"><span class="tag">Terraform</span><span class="tag">AWS</span><span class="tag">GCP / GKE</span><span class="tag">Kubernetes</span><span class="tag">K3S</span><span class="tag">Helm</span><span class="tag">FluxCD</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span><span class="tag">Ansible</span></div></div>
-                    <div class="skill-group"><strong>Observability</strong><div class="tags"><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Loki</span><span class="tag">Tempo</span><span class="tag">ELK</span><span class="tag">Fluentd</span></div></div>
-                    <div class="skill-group"><strong>Development</strong><div class="tags"><span class="tag">Go</span><span class="tag">Python</span><span class="tag">Shell</span><span class="tag">Django</span><span class="tag">Kubernetes operators</span></div></div>
-                    <div class="skill-group"><strong>Data / HPC</strong><div class="tags"><span class="tag">Kafka</span><span class="tag">Cassandra</span><span class="tag">MariaDB</span><span class="tag">MongoDB</span><span class="tag">Ceph</span><span class="tag">Slurm</span><span class="tag">CUDA</span><span class="tag">InfiniBand RDMA</span></div></div>
+                    <div class="skill-group"><strong>Cloud &amp; Containers</strong><div class="tags"><span class="tag">AWS</span> <span class="tag">GCP / GKE</span> <span class="tag">Azure</span> <span class="tag">OVH</span></div></div>
+                    <div class="skill-group"><strong>Infrastructure as Code &amp; GitOps</strong><div class="tags"><span class="tag">Terraform</span> <span class="tag">Terragrunt</span> <span class="tag">Ansible</span> <span class="tag">FluxCD</span> <span class="tag">ArgoCD</span></div></div>
+                    <div class="skill-group"><strong>CI/CD &amp; Automation</strong><div class="tags"><span class="tag">Github Actions</span> <span class="tag">GitLab CI</span> <span class="tag">Jenkins</span> <span class="tag">Airflow</span></div></div>
+                    <div class="skill-group"><strong>Languages</strong><div class="tags"> <span class="tag">Python</span> <span class="tag">Go</span> <span class="tag">Typescript</span></div></div>
+                    <div class="skill-group"><strong>Observability</strong><div class="tags"><span class="tag">Prometheus</span> <span class="tag">Grafana</span> <span class="tag">Loki</span> <span class="tag">Tempo</span> <span class="tag"></span> <span class="tag">OpenTelemetry</span> <span class="tag">Datadog</span> <span class="tag">Incident.io</span></div></div>
+                    <div class="skill-group"><strong>Data</strong><div class="tags"><span class="tag">Kafka</span> <span class="tag">Elasticsearch</span> <span class="tag">PostgreSQL</span> <span class="tag">Slurm</span></div></div>
+                    <div class="skill-group"><strong>Compute</strong><div class="tags"><span class="tag">Slurm</span> <span class="tag">CUDA</span> <span class="tag">InfiniBand</span></div></div>
                 </section>
 
                 <section class="section">
@@ -113,7 +116,7 @@
             <main>
                 <section class="section">
                     <h2 class="section-title">Professional Summary</h2>
-                    <p class="profile">Senior infrastructure and reliability engineer with 15+ years of experience across SRE, cloud, DevOps, HPC and Big Data. I design pragmatic platforms that balance performance, security, scalability and cost, from bare-metal clusters to multi-cloud Kubernetes environments.</p>
+                    <p class="profile">Senior DevOps Engineer with 10+ years of experience automating and operating software delivery, infrastructure provisioning and production platforms.<br />Bridging DevOps, Platform Engineering and SRE, with a proven track record of building scalable, reliable and cost-conscious environments across AWS, GCP and bare metal using Terraform, Kubernetes, GitOps, CI/CD and observability tooling.<br />Adaptable to diverse technical and organizational contexts, with a focus on pragmatic solutions that improve reliability and delivery.</p>
                 </section>
 
                 <section class="section">
