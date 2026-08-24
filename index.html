@@ -6,7 +6,9 @@
     <meta name="description" content="Resume of Anthony Bescond, Senior SRE and Kubernetes multi-cloud expert">
     <title>Anthony Bescond | Senior SRE</title>
     <style>
-        @font-face { font-family: "DM Serif Display"; src: url("assets/fonts/dm-serif-display-regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+        @font-face { font-family: "Space Grotesk"; src: url("assets/fonts/space-grotesk-regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+        @font-face { font-family: "Space Grotesk"; src: url("assets/fonts/space-grotesk-medium.ttf") format("truetype"); font-style: normal; font-weight: 500; font-display: swap; }
+        @font-face { font-family: "Space Grotesk"; src: url("assets/fonts/space-grotesk-semibold.ttf") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
         @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope-regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
         @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope-medium.ttf") format("truetype"); font-style: normal; font-weight: 500; font-display: swap; }
         @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope-semibold.ttf") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
@@ -26,7 +28,7 @@
         .hero > * { position: relative; z-index: 1; }
         .eyebrow { margin: 0 0 .85rem; color: #bbaaff; font-size: .7rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
         h1, h2, h3, p { margin-top: 0; }
-        h1 { margin-bottom: .6rem; font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: clamp(3.1rem, 7vw, 5.7rem); font-weight: 400; line-height: .85; letter-spacing: -.065em; }
+        h1 { margin-bottom: .6rem; font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: clamp(3.1rem, 7vw, 5.7rem); font-weight: 500; line-height: .85; letter-spacing: -.065em; }
         .hero h2 { margin: 0; color: #e6e4f3; font-size: 1.05rem; font-weight: 500; letter-spacing: .015em; }
         .contact { align-self: center; min-width: 215px; padding: 1rem 1.1rem; border-radius: .4rem; background: rgba(20, 18, 44, .18); box-shadow: 0 14px 28px rgba(13, 10, 31, .32); backdrop-filter: blur(3px); font-size: .87rem; text-align: right; text-shadow: 0 2px 10px rgba(0, 0, 0, .55); } .contact p { margin: .28rem 0; } .contact a { color: #fff; text-decoration-color: #ffb3a6; }
         .layout { display: grid; grid-template-columns: 305px minmax(0, 1fr); }
@@ -35,12 +37,12 @@
         .section { margin-bottom: 2.8rem; } .section:last-child { margin-bottom: 0; }
         .section-title { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.25rem; color: var(--violet); font-size: .68rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
         .section-title::after { content: ""; height: 1px; flex: 1; background: var(--line); }
-        .profile { margin: 0; padding: 0 0 2.5rem; border-bottom: 1px solid var(--line); font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: 1.24rem; line-height: 1.5; color: #323447; }
+        .profile { margin: 0; padding: 0 0 2.5rem; border-bottom: 1px solid var(--line); font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.18rem; line-height: 1.55; color: #323447; }
         .skill-group { margin-bottom: 1.5rem; } .skill-group strong { display: block; margin-bottom: .65rem; font-size: .73rem; letter-spacing: .02em; }
         .tags { display: flex; flex-wrap: wrap; gap: .42rem; } .tag { padding: .28rem .52rem; border-radius: 2px; background: #fff; box-shadow: inset 0 0 0 1px #dddbea; color: #484b62; font-size: .71rem; }
         .education-item { margin-bottom: 1.25rem; } .education-item strong { display: block; font-size: .78rem; line-height: 1.45; } .education-item span { display: inline-block; margin-top: .28rem; color: var(--violet); font-size: .72rem; font-weight: 700; }
         .job { position: relative; margin: 0; padding: 0 0 2.1rem 1.8rem; border-left: 1px solid #d9d5ed; } .job::before { content: ""; position: absolute; width: .55rem; height: .55rem; left: -.31rem; top: .38rem; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 4px var(--violet-soft); } .job:last-child { padding-bottom: 0; }
-        .job-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; } .job h3 { margin-bottom: .18rem; font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: 1.38rem; font-weight: 400; line-height: 1.15; letter-spacing: -.025em; }
+        .job-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; } .job h3 { margin-bottom: .18rem; font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.3rem; font-weight: 500; line-height: 1.15; letter-spacing: -.04em; }
         .date { flex: 0 0 auto; color: var(--coral); font-size: .72rem; font-weight: 800; letter-spacing: .06em; white-space: nowrap; } .company { margin-bottom: .65rem; color: var(--violet); font-size: .78rem; font-weight: 750; }
         .job p { margin-bottom: .55rem; font-size: .86rem; } .tech { color: var(--muted); font-size: .75rem !important; } .tech strong { color: var(--ink); } .interests { color: #4c4e60; font-size: .82rem; }
         @media (max-width: 760px) {
