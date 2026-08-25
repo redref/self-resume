@@ -22,7 +22,7 @@
         .toolbar { display: flex; justify-content: flex-end; padding: .7rem max(1.25rem, calc((100% - 1180px) / 2)); background: #12131e; color: #fff; font-size: .76rem; letter-spacing: .04em; }
         .toolbar a { text-decoration: none; opacity: .8; } .toolbar a:hover { opacity: 1; }
         .resume { max-width: 1180px; margin: 2.5rem auto; background: var(--paper); box-shadow: 0 24px 70px rgba(32, 28, 64, .16); }
-        .hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; padding: 4.5rem 4.8rem 3.8rem; background: radial-gradient(circle at 79% 8%, rgba(255, 115, 92, .95) 0 3%, transparent 3.2%), radial-gradient(circle at 99% 93%, #9a77ff 0 15%, transparent 15.3%), radial-gradient(circle at 69% 63%, #5334bb 0 28%, transparent 28.4%), linear-gradient(120deg, #151622 0 44%, #272449 44% 61%, #7047eb 61% 100%); color: #fff; position: relative; overflow: hidden; isolation: isolate; }
+        .hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; padding: 3rem 4.8rem 2.5rem; background: radial-gradient(circle at 79% 8%, rgba(255, 115, 92, .95) 0 3%, transparent 3.2%), radial-gradient(circle at 99% 93%, #9a77ff 0 15%, transparent 15.3%), radial-gradient(circle at 69% 63%, #5334bb 0 28%, transparent 28.4%), linear-gradient(120deg, #151622 0 44%, #272449 44% 61%, #7047eb 61% 100%); color: #fff; position: relative; overflow: hidden; isolation: isolate; }
         .hero::before { content: ""; position: absolute; z-index: 0; inset: 0; opacity: .46; background-image: linear-gradient(rgba(255,255,255,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.16) 1px, transparent 1px); background-size: 31px 31px; background-position: right -5px top -5px; clip-path: polygon(47% 0, 100% 0, 100% 100%, 30% 100%); }
         .hero::after { content: ""; position: absolute; z-index: 0; width: 178px; height: 178px; right: 4.5rem; bottom: -96px; border: 17px solid var(--coral); border-radius: 50%; box-shadow: -42px -42px 0 -31px #fff, -42px -42px 0 -15px rgba(255,255,255,.27); transform: rotate(-12deg); }
         .hero > * { position: relative; z-index: 1; }
@@ -33,22 +33,22 @@
         .contact { align-self: center; min-width: 215px; padding: 1rem 1.1rem; border-radius: .4rem; background: rgba(20, 18, 44, .18); box-shadow: 0 14px 28px rgba(13, 10, 31, .32); backdrop-filter: blur(3px); font-size: .87rem; text-align: right; text-shadow: 0 2px 10px rgba(0, 0, 0, .55); } .contact p { margin: .28rem 0; } .contact a { color: #fff; text-decoration-color: #ffb3a6; }
         .layout { display: grid; grid-template-columns: 305px minmax(0, 1fr); }
         aside { padding: 2.25rem 1.2rem 3rem 2.3rem; background: #f7f6fb; border-right: 1px solid var(--line); }
-        main { padding: 2.25rem 3.8rem 3rem; }
+        main { padding: 1.75rem 2.8rem 3rem; }
         .section { margin-bottom: 0.8rem; } .section:last-child { margin-bottom: 0; }
         .section-title { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.25rem; color: var(--violet); font-size: .80rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
         .section-title::after { content: ""; height: 1px; flex: 1; background: var(--line); }
-        .profile { margin: 0; padding: 0 0 2.5rem; border-bottom: 1px solid var(--line); font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.12rem; line-height: 1.55; color: #323447; text-align: justify; text-align-last: left; hyphens: auto; }
+        .profile { margin: 0; padding: 0 0 2.5rem; border-bottom: 1px solid var(--line); font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: .95rem; line-height: 1.55; color: #323447; text-align: justify; text-align-last: left; hyphens: auto; }
         .skill-group { margin-bottom: 1.5rem; text-align: left; } .skill-group strong { display: block; margin-bottom: .42rem; color: var(--ink); font-size: .73rem; letter-spacing: .02em; }
         .tags { color: #484b62; font-size: .75rem; line-height: 1.8; text-align: left; } .tag { display: inline; } .tag + .tag::before { content: " · "; color: var(--violet); }
         .education-item { margin-bottom: 1.25rem; } .education-item strong { display: block; font-size: .78rem; line-height: 1.45; } .education-item span { display: inline-block; margin-top: .28rem; color: var(--violet); font-size: .72rem; font-weight: 700; }
         .job { position: relative; margin: 0; padding: 0 0 2.1rem 1.8rem; border-left: 1px solid #d9d5ed; } .job::before { content: ""; position: absolute; width: .55rem; height: .55rem; left: -.31rem; top: .38rem; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 4px var(--violet-soft); } .job:last-child { padding-bottom: 0; }
-        .job-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; } .job h3 { margin-bottom: .18rem; font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.3rem; font-weight: 500; line-height: 1.15; letter-spacing: -.04em; }
+        .job-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; } .job h3 { margin-bottom: .18rem; font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: 1.3rem; font-weight: 500; line-height: 1.15; letter-spacing: -.04em; } .job ul { margin: .7rem 0 0; padding-left: 1.25rem;  font-size: .86rem;} .job li + li { margin-top: .3rem; }
         .date { flex: 0 0 auto; color: var(--coral); font-size: .72rem; font-weight: 800; letter-spacing: .06em; white-space: nowrap; } .company { margin-bottom: .65rem; color: var(--violet); font-size: .78rem; font-weight: 750; }
         .job p { margin-bottom: .55rem; font-size: .86rem; } .tech { color: var(--muted); font-size: .75rem !important; } .tech strong { color: var(--ink); } .interests { color: #4c4e60; font-size: .82rem; }
         @media (max-width: 760px) {
             .toolbar { padding-inline: 1rem; }
             .resume { margin: 0; box-shadow: none; }
-            .hero { grid-template-columns: 1fr; padding: 3rem 1.5rem 2.4rem; }
+            .hero { grid-template-columns: 1fr; padding: 2rem 1.5rem 1.8rem; }
             .hero::before { clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%); }
             .hero::after { right: 1.2rem; width: 110px; height: 110px; border-width: 12px; box-shadow: -28px -28px 0 -21px #fff, -28px -28px 0 -10px rgba(255,255,255,.27); }
             .contact { text-align: left; }
@@ -92,7 +92,7 @@
             <aside>
                 <section class="section">
                     <h2 class="section-title">Technical Skills</h2>
-                    <div class="skill-group"><strong>Cloud &amp; Containers</strong><div class="tags"><span class="tag">AWS</span> <span class="tag">GCP / GKE</span> <span class="tag">Azure</span> <span class="tag">OVH</span></div></div>
+                    <div class="skill-group"><strong>Cloud &amp; Containers</strong><div class="tags"><span class="tag">AWS / EKS</span> <span class="tag">GCP / GKE</span> <span class="tag">Azure</span> <span class="tag">OVH</span> <span class="tag">Scaleway</span></div></div>
                     <div class="skill-group"><strong>Infrastructure as Code &amp; GitOps</strong><div class="tags"><span class="tag">Terraform</span> <span class="tag">Terragrunt</span> <span class="tag">Ansible</span> <span class="tag">FluxCD</span> <span class="tag">ArgoCD</span></div></div>
                     <div class="skill-group"><strong>CI/CD &amp; Automation</strong><div class="tags"><span class="tag">Github Actions</span> <span class="tag">GitLab CI</span> <span class="tag">Jenkins</span> <span class="tag">Airflow</span></div></div>
                     <div class="skill-group"><strong>Languages</strong><div class="tags"> <span class="tag">Python</span> <span class="tag">Go</span> <span class="tag">Typescript</span></div></div>
@@ -116,20 +116,90 @@
             <main>
                 <section class="section">
                     <h2 class="section-title">Professional Summary</h2>
-                    <p class="profile">Senior DevOps Engineer with 10+ years of experience automating and operating software delivery, infrastructure provisioning and production platforms.<br />Bridging DevOps, Platform Engineering and SRE, with a proven track record of building scalable, reliable and cost-conscious environments across AWS, GCP and bare metal using Terraform, Kubernetes, GitOps, CI/CD and observability tooling.<br />Adaptable to diverse technical and organizational contexts, with a focus on pragmatic solutions that improve reliability and delivery.</p>
+                    <p class="profile">Senior DevOps Engineer with 10+ years of experience automating and operating software delivery, infrastructure provisioning and production platforms.<br /> Bridging DevOps, Platform Engineering and SRE, with a proven track record of building scalable, reliable and cost-conscious environments across AWS, GCP and bare metal using Terraform, Kubernetes, GitOps, CI/CD and observability tooling.<br /> Adaptable to diverse technical and organizational contexts, with a focus on pragmatic solutions that improve reliability and delivery.</p>
                 </section>
 
                 <section class="section">
                     <h2 class="section-title">Professional Experience</h2>
-                    <div class="job"><div class="job-head"><h3>Senior Blockchain SRE</h3><span class="date">2022 - 2025</span></div><div class="company">Kiln · kiln.fi</div><p class="tech"><strong>Stack:</strong> AWS, Kubernetes, bare metal, Helm, FluxCD, Tempo, staking</p><p>Scaled and specialized infrastructure during rapid growth in clients, teams and protocol diversity. Architected AWS and bare-metal infrastructure for 300 to 500 nodes, integrated and supported validators across 30+ blockchain protocols, and automated validation performance improvements.</p></div>
-                    <div class="job"><div class="job-head"><h3>DevOps Engineer</h3><span class="date">2020 - 2021</span></div><div class="company">Altair Engineering</div><p class="tech"><strong>Stack:</strong> Kubernetes, Docker, MongoDB, Python, Grafana, K3S, GitLab CI</p><p>Owned infrastructure and release processes for a multi-cloud HPC resource deployment platform. Managed test configurations across seven clouds, delivered highly available Kubernetes and on-premise K3S deployments, and built integrations for monitoring and tracing. Refactored <a href="https://github.com/altairengineering/pkr/">pkr</a> and migrated Jenkins tests to GitLab CI.</p></div>
-                    <div class="job"><div class="job-head"><h3>System Reliability Engineer</h3><span class="date">2018 - 2019</span></div><div class="company">BlaBlaCar · Paris</div><p class="tech"><strong>Stack:</strong> Kubernetes, Docker, Go, Prometheus, Nginx, BGP, Istio, Kafka</p><p>Designed and operated data clusters including MariaDB, Hadoop, Vertica, Cassandra and Redis, as well as Kafka, Kafka Connect and Airflow data tooling. Reworked the multi-layer Nginx API cache to maintain a 99%+ hit rate, migrated databases to GKE and redesigned the logging stack.</p></div>
-                    <div class="job"><div class="job-head"><h3>HPC / Big Data Systems Engineer</h3><span class="date">2014 - 2018</span></div><div class="company">French Ministry of Defence · Paris</div><p class="tech"><strong>Stack:</strong> Puppet, Linux, Python, Django, Ceph, InfiniBand, GPU</p><p>Selected, deployed and maintained bare-metal clusters. Integrated and optimized HPC and Big Data platforms, developed Python daemons, APIs and web services, and analyzed customer applications to improve workload performance.</p></div>
-                    <div class="job"><div class="job-head"><h3>Systems Engineer, E-commerce</h3><span class="date">2013 - 2014</span></div><div class="company">Galeries Lafayette · Paris</div><p class="tech"><strong>Stack:</strong> Apache, Varnish, Tomcat, Oracle, Hybris, Graphite</p><p>Maintained the three-tier web platform and product publishing workflows. Designed delivery architecture with test platforms and automatic builds, and integrated metrology tools for capacity planning and marketing analysis.</p></div>
-                    <div class="job"><div class="job-head"><h3>HPC Systems Engineer</h3><span class="date">2013</span></div><div class="company">OVH GS - Oxalya · Paris</div><p class="tech"><strong>Stack:</strong> Linux, Slurm, Lustre, InfiniBand, Nvidia GPU</p><p>Deployed dedicated HPC clusters at customer sites, integrated a shared compute-on-demand service, and compiled, optimized and benchmarked scientific workloads.</p></div>
-                    <div class="job"><div class="job-head"><h3>Production Engineer</h3><span class="date">2010 - 2012</span></div><div class="company">DCNS · Cherbourg</div><p class="tech"><strong>Stack:</strong> Linux, Oracle, JBoss, Apache, Tomcat, Java, Centreon, Control-M</p><p>Installed and maintained internal services and daily data processes. Developed a framework for traceable and secure deliveries across many instances.</p></div>
-                    <div class="job"><div class="job-head"><h3>Intelligent Network Systems Technician</h3><span class="date">2008 - 2010</span></div><div class="company">Alcatel-Lucent</div><p class="tech"><strong>Assignments:</strong> Bell M (Canada), OTE (Greece), Orange (Dominican Republic)</p><p>Independently delivered Intelligent Network application clusters at customer sites, covering hardware installation, storage and system configuration, service deployment and testing.</p></div>
-                    <div class="job"><div class="job-head"><h3>Network Administrator / PHP Developer</h3><span class="date">2007 - 2008</span></div><div class="company">MMF Services · Solstys</div><p>Configured network infrastructure and web services, then integrated the WebDAV protocol into a CMS product using PHP.</p></div>
+                    <div class="job">
+                        <div class="job-head"><h3>Senior Blockchain Engineer (SRE + Devops)</h3><span class="date">2022 - 2025</span></div>
+                        <div class="company">Kiln · kiln.fi</div>
+                        <p>Built and scaled infrastructure for staking and API services during a period of rapid growth (4 to 12 DevOps engineers, 200 to 2,000 CPUs, and 3 to 30+ blockchains).</p>
+                        <ul>
+                            <li>Provisioned, operated and monitored multi-cluster, multi-environment and multi-cloud infrastructure (<strong>AWS, GCP, Scaleway and bare metal</strong>) using IAC (<strong>Terraform</strong>) and Gitops (<strong>Kubernetes, FluxCD</strong>). Introduced workload cost forecasting and optimisation.</li>
+                            <li>Integrated, monitored, automated and reported on validator and full-node software across 30+ blockchains, including <strong>Ethereum, Solana, TON, Polkadot, Tezos and Avalanche</strong>, with some tooling developed in <strong>Go</strong>.</li>
+                            <li>Designed and promoted shared developer and CI/CD tooling, including <strong>GitHub Actions</strong> templates, ingress and gateway patterns, cross-cluster standards and developer laptop tooling.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-head"><h3>DevOps Engineer</h3><span class="date">2020 - 2021</span></div>
+                        <div class="company">Altair Engineering</div>
+                        <p>Owned infrastructure, packaging and release processes for a multi-cloud HPC resource auto-deployment platform.</p>
+                        <ul>
+                            <li>Designed, built and maintained baseline deployment methods across seven cloud providers, using <strong>Kubernetes, K3s and Docker Compose</strong>.</li>
+                            <li>Built and integrated CI/CD platforms for automated testing and deployments; led the migration from <strong>Jenkins</strong> to <strong>GitlabCI</strong></li>
+                            <li>Integrated observability capabilities into the product, including <strong>Grafana, Tempo tracing and Loki</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-head"><h3>System Reliability Engineer</h3><span class="date">2018 - 2019</span></div>
+                        <div class="company">BlaBlaCar · Paris</div>
+                        <p>Owned data infrastructure and contributed to the design of the company-wide infrastructure platform.</p>
+                        <ul>
+                            <li>Operated, monitored and maintained MariaDB, Elasticsearch, Hadoop, Cassandra and Redis clusters. Partnered with developers to optimise queries and ensure consistent performance.</li>
+                            <li>Co-designed and automated Kafka, Airflow and Vertica tooling, and developed data pipelines for large-scale processing and analytics.</li>
+                            <li>Contributed to the migration strategy from existing Kubernetes platforms to GKE, including interim service-mesh optimisation work.</li>
+                            <li>Redesigned a multi-layer persistent Nginx API cache, sustaining a 99%+ cache-hit-rate SLI to third-party APIs.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-head"><h3>HPC / Big Data Systems Engineer</h3><span class="date">2014 - 2018</span></div>
+                        <div class="company">French Ministry of Defence · Paris</div>
+                        <p>Contributed to the cluster and data platform team, providing platform operations and technical guidance for HPC and Big Data workloads.</p>
+                        <ul>
+                            <li>Selected, benchmarked, integrated and provisioned hardware with suppliers, tailoring configurations to HPC and Big Data workloads.</li>
+                            <li>Automated provisioning and configuration at scale through <strong>Python</strong> scripts and microservices built around <strong>Puppet.</strong></li>
+                            <li>Analyzed customer applications to improve workload performance.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-head"><h3>Systems Engineer, E-commerce</h3><span class="date">2013 - 2014</span></div>
+                        <div class="company">Galeries Lafayette · Paris</div>
+                        <p>Maintained the three-tier web platform and product publishing workflows.</p>
+                        <ul>
+                            <li>Designed delivery architecture with test platforms and automatic builds.</li>
+                            <li>Integrated metrology tools for capacity planning and marketing analysis.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-head"><h3>HPC Systems Engineer</h3><span class="date">2013</span></div>
+                        <div class="company">OVH GS - Oxalya · Paris</div>
+                        <p>Deployed dedicated HPC clusters at customer sites.</p>
+                        <ul>
+                            <li>Integrated a shared compute-on-demand service.</li>
+                            <li>Compiled, optimized and benchmarked scientific workloads.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-head"><h3>Production Engineer</h3><span class="date">2010 - 2012</span></div>
+                        <div class="company">DCNS · Cherbourg</div>
+                        <p>Installed and maintained internal services and daily data processes.</p>
+                        <ul>
+                            <li>Developed a framework for traceable and secure deployments across many instances.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-head"><h3>Systems administrator in mobile networks</h3><span class="date">2008 - 2010</span></div>
+                        <div class="company">Alcatel-Lucent</div>
+                        <p>Hardware and software deployment for "billing" platforms, integrate to client "operator network", testing and benchmarking before production.</p>
+                        <ul>
+                            <li>Bootstrap linux or Solaris nodes, push standard configurations, deploy custom services and billing plans according to needs</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="job-head"><h3>Internships</h3><span class="date">2007 - 2008</span></div>
+                        <p>DeployedVoIP and internal services. Developed a PHP CMS plugin for network emulated file transfer.</p>
+                    </div>
                 </section>
             </main>
         </div>
